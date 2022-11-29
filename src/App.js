@@ -1,4 +1,11 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+
+//components
+import FooterComponent from './components/FooterComponent'
+import HeaderComponent from './components/HeaderComponent'
+
+//public pages aviable
 import CartPage from './pages/CartPage'
 import HomePage from './pages/HomePage'
 import LoginPage from './pages/LoginPage'
@@ -27,6 +34,7 @@ import AdminUsersPage from './pages/admin/AdminUsersPage'
 function App() {
   return (
     <BrowserRouter>
+      <HeaderComponent />
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/cartPage' element={<CartPage />} />
@@ -67,6 +75,7 @@ function App() {
           <Route path='/admin/users' element={<AdminUsersPage />} />
         </Route>
       </Routes>
+      <FooterComponent />
     </BrowserRouter>
   )
 }
