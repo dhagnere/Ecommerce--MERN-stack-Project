@@ -11,47 +11,73 @@ import {
   InputGroup,
 } from 'react-bootstrap'
 
+import { LinkContainer } from 'react-router-bootstrap'
+import { Link } from 'react-router-dom'
+
 const HeaderComponent = () => {
   return (
     <Navbar collapseOnSelect expand='lg' bg='dark' variant='dark'>
       <Container>
-        <Navbar.Brand href='#home'>VOTRE MARQUE</Navbar.Brand>
+        <LinkContainer to='/'>
+          <Navbar.Brand href='/'>VOTRE MARQUE</Navbar.Brand>
+        </LinkContainer>
+
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav className='me-auto'>
             <InputGroup>
               <DropdownButton
                 id='dropdown-basic-button'
-                title='Dropdown button'
+                title='Toutes les catégories'
               >
-                <Dropdown.Item href='#/action-1'>Action</Dropdown.Item>
-                <Dropdown.Item href='#/action-2'>Another action</Dropdown.Item>
-                <Dropdown.Item href='#/action-3'>Something else</Dropdown.Item>
+                <Dropdown.Item>Electronique</Dropdown.Item>
+                <Dropdown.Item>Livres</Dropdown.Item>
+                <Dropdown.Item>jeux et jouets</Dropdown.Item>
               </DropdownButton>
-              <Form.Control type='text' placeholder='Normal text' />
-              <Button variant='warning'>Warning</Button>
+              <Form.Control
+                type='text'
+                placeholder='Rechercher sur le site...'
+              />
+              <Button variant='warning'>
+                <i className='bi bi-search text-dark'></i>
+              </Button>
             </InputGroup>
           </Nav>
           <Nav>
-            <Nav.Link href='#features'>MENU-1</Nav.Link>
-            <Nav.Link href='#pricing'>TARIFS</Nav.Link>
+            <LinkContainer to='/admin/orders'>
+              <Nav.Link>
+                Admin
+                <span className='position-absolute top-1 start-10 translate-middle p-2 bg-danger border border-light rounded-circle'></span>
+              </Nav.Link>
+            </LinkContainer>
+
+            <NavDropdown title='Exemple Client' id='collasible-nav-dropdown'>
+              <NavDropdown.Item
+                eventKey='/user/my-orders'
+                as={Link}
+                to='/user/my-orders'
+              >
+                Mes commandes
+              </NavDropdown.Item>
+              <NavDropdown.Item eventKey='/user' as={Link} to='/user'>
+                Mon profile
+              </NavDropdown.Item>
+              <NavDropdown.Item>Se Déconnecter</NavDropdown.Item>
+            </NavDropdown>
+            <LinkContainer to='/Login'>
+              <Nav.Link>Se connecter</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to='/Register'>
+              <Nav.Link>S'enregistrer</Nav.Link>
+            </LinkContainer>
             <Nav.Link href='#pricing'>
               <Badge pill bg='danger'>
                 2
               </Badge>
+              <i class='bi bi-cart-dash'></i>
+              <span className='ms-1'></span>
               PANIER
             </Nav.Link>
-            <NavDropdown title='Dropdown' id='collasible-nav-dropdown'>
-              <NavDropdown.Item href='#action/3.1'>Action</NavDropdown.Item>
-              <NavDropdown.Item href='#action/3.2'>
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href='#action/3.3'>Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href='#action/3.4'>
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
           </Nav>
         </Navbar.Collapse>
       </Container>
