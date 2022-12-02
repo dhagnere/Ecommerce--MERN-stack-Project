@@ -19,7 +19,7 @@ const HeaderComponent = () => {
     <Navbar collapseOnSelect expand='lg' bg='dark' variant='dark'>
       <Container>
         <LinkContainer to='/'>
-          <Navbar.Brand href='/'>VOTRE MARQUE</Navbar.Brand>
+          <Navbar.Brand href='/'>VOTRE LOGO</Navbar.Brand>
         </LinkContainer>
 
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
@@ -33,6 +33,7 @@ const HeaderComponent = () => {
                 <Dropdown.Item>Electronique</Dropdown.Item>
                 <Dropdown.Item>Livres</Dropdown.Item>
                 <Dropdown.Item>jeux et jouets</Dropdown.Item>
+            
               </DropdownButton>
               <Form.Control
                 type='text'
