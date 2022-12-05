@@ -17,3 +17,9 @@ footer {
 .assombrir { 
   filter: brightness(75%);
   }
+
+  .chat-frame{
+    position:absolute;
+    bottom:125px;
+    right:1px
+  }
