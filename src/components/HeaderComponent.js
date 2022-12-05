@@ -32,7 +32,7 @@ const HeaderComponent = () => {
               >
                 <Dropdown.Item>Electronique</Dropdown.Item>
                 <Dropdown.Item>Livres</Dropdown.Item>
-                <Dropdown.Item>jeux et jouets</Dropdown.Item>
+                <Dropdown.Item>Photographie</Dropdown.Item>
             
               </DropdownButton>
               <Form.Control
@@ -75,7 +75,7 @@ const HeaderComponent = () => {
               <Badge pill bg='danger'>
                 2
               </Badge>
-              <i class='bi bi-cart-dash'></i>
+              <i className='bi bi-cart-dash'></i>
               <span className='ms-1'></span>
               PANIER
             </Nav.Link>
