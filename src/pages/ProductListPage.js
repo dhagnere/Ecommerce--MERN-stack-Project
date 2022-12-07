@@ -21,7 +21,8 @@ const ProductListPage = () => {
       <Row>
         <Col md={3}>
           <ListGroup variant='flush'>
-            <ListGroup.Item>{<SortOptionsComponent />}</ListGroup.Item>
+            <ListGroup.Item className="mb-3 mt-3">{<SortOptionsComponent />}</ListGroup.Item>
+            FILTRER : <br />
             <ListGroup.Item>{<PriceFilterComponent />}</ListGroup.Item>
             <ListGroup.Item>{<RatingFilterComponent />}</ListGroup.Item>
             <ListGroup.Item>{<CategoryFilterComponent />}</ListGroup.Item>
@@ -33,8 +34,8 @@ const ProductListPage = () => {
           </ListGroup>
         </Col>
         <Col md={9}>
-          {<ProductForListComponent />}
-          {<PaginationComponent/>}
+          {<ProductForListComponent/>}
+          {<PaginationComponent />}
         </Col>
       </Row>
     </Container>

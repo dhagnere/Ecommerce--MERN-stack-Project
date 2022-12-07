@@ -5,7 +5,7 @@ import { Fragment } from 'react'
 const RatingFilterComponent = () => {
   return (
     <>
-      <span className='fw-bold'>Notations</span>
+      <span className='fw-bold'>Notes des Clients</span>
 
       {Array.from({ length: 5 }).map((_, idx) => (
         <Fragment key={idx}>

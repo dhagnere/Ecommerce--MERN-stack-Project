@@ -6,7 +6,7 @@ import {RatingView} from 'react-simple-star-rating'
 const ProductForListComponent = () => {
 
   return (
-    <Card style={{ width: '18rem' }}>
+    <Card style={{ width: '18rem' }} className="mt-2 mb-2">
       <Card.Img variant="top" src="../images/games-category.png" />
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
