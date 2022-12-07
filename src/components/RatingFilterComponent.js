@@ -1,14 +1,23 @@
 import { Form } from 'react-bootstrap'
+import { Rating } from 'react-simple-star-rating'
+import { Fragment } from 'react'
 
 const RatingFilterComponent = () => {
   return (
-    <Form>
-      <Form.Check type={'checkbox'} id={`default`} label={`5 étoiles`} />
-      <Form.Check type={'checkbox'} id={`default`} label={`4 étoiles`} />
-      <Form.Check type={'checkbox'} id={`default`} label={`3 étoiles`} />
-      <Form.Check type={'checkbox'} id={`default`} label={`2 étoiles`} />
-      <Form.Check type={'checkbox'} id={`default`} label={`1 étoiles`} />
-    </Form>
+    <>
+      <span className='fw-bold'>Notations</span>
+
+      {Array.from({ length: 5 }).map((_, idx) => (
+        <Fragment key={idx}>
+        <Form.Check type='checkbox' id={`chec-api-${idx}`}>
+          <Form.Check.Input type='checkbox' isValid />
+          <Form.Check.Label style={{ cursor: 'pointer' }}>
+            {<Rating readonly size={20} initialValue={5 - idx} />}
+          </Form.Check.Label>
+          </Form.Check>
+        </Fragment>
+      ))}
+    </>
   )
 }
 

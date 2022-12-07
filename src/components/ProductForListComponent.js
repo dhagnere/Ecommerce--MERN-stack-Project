@@ -1,5 +1,6 @@
 import { Card, Button } from 'react-bootstrap'
 import LinkContainer from 'bootstrap'
+import {RatingView} from 'react-simple-star-rating'
 
 
 const ProductForListComponent = () => {
