@@ -1,24 +1,39 @@
-import { Card, Button } from 'react-bootstrap'
-import LinkContainer from 'bootstrap'
-import {RatingView} from 'react-simple-star-rating'
+import { Card, Button, Row, Col } from 'react-bootstrap'
+import { LinkContainer } from 'react-router-bootstrap'
+import { Rating } from 'react-simple-star-rating'
 
-
-const ProductForListComponent = () => {
-
+const ProductForListComponent = ({ images, idx }) => {
   return (
-    <Card style={{ width: '18rem' }} className="mt-2 mb-2">
-      <Card.Img variant="top" src="../images/games-category.png" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
+    <Card style={{ marginTop: '30px', marginBottom: '50px' }}>
+      <Row>
+        <Col lg={5}>
+          <Card.Img
+            variant='top'
+            src={'/images/' + images[idx] + '-category.png'}
+          />
+        </Col>
+        <Col lg={7}>
+          <Card.Body>
+            <Card.Title>Product Name Lorem</Card.Title>
+            <Card.Text>
+            Product Description Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Magni ipsa ducimus architecto explicabo id
+              accusantium nihil exercitationem autem porro esse..
+            </Card.Text>
+            <Card.Text>
+              <Rating readonly size={20} initialValue={5} /> (1)
+            </Card.Text>
+            <Card.Text className='h4'>
+              123€{' '}
+              <LinkContainer to='/product-details'>
+                <Button variant='danger'>Voir le produit </Button>
+              </LinkContainer>
+            </Card.Text>
+          </Card.Body>
+        </Col>
+      </Row>
     </Card>
   )
-
 }
 
 export default ProductForListComponent

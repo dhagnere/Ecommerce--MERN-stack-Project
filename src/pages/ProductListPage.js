@@ -14,14 +14,15 @@ import CategoryFilterComponent from '../components/CategoryFilterComponent'
 import AttributesFilterComponent from '../components/AttributesFilterComponent'
 import ProductForListComponent from '../components/ProductForListComponent'
 import PaginationComponent from '../components/PaginationComponent'
-
 const ProductListPage = () => {
   return (
     <Container fluid>
       <Row>
         <Col md={3}>
           <ListGroup variant='flush'>
-            <ListGroup.Item className="mb-3 mt-3">{<SortOptionsComponent />}</ListGroup.Item>
+            <ListGroup.Item className='mb-3 mt-3'>
+              {<SortOptionsComponent />}
+            </ListGroup.Item>
             FILTRER : <br />
             <ListGroup.Item>{<PriceFilterComponent />}</ListGroup.Item>
             <ListGroup.Item>{<RatingFilterComponent />}</ListGroup.Item>
@@ -34,7 +35,14 @@ const ProductListPage = () => {
           </ListGroup>
         </Col>
         <Col md={9}>
-          {<ProductForListComponent/>}
+          {Array.from({ length: 5 }).map((_, idx) => (
+            <ProductForListComponent
+              key={idx}
+              images={['games', 'monitors', 'tablets', 'games', 'monitors']}
+              idx={idx}
+            />
+          ))}
+
           {<PaginationComponent />}
         </Col>
       </Row>
