@@ -43,7 +43,7 @@ function App() {
         <Route element={<RoutesWithUserChatComponent />}>
           {/*public routes aviable*/}
           <Route path='/' element={<HomePage />} />
-          <Route path='/cartPage' element={<CartPage />} />
+          <Route path='/cart' element={<CartPage />} />
           <Route path='/login' element={<LoginPage />} />
           <Route path='/product-details' element={<ProductDetailsPage />} />
           <Route path='/product-details/:id' element={<ProductDetailsPage />} />
