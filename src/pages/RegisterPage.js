@@ -1,17 +1,19 @@
-import {
-  Container,
-  Row,
-  Col,
-  Form,
-  InputGroup,
-  Button,
-  Alert,
-} from 'react-bootstrap'
+import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap'
 import Spinner from 'react-bootstrap/Spinner'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const RegisterPage = () => {
+  const onChange = () => {
+    const password = document.querySelector('input[name=password]')
+    const confirm = document.querySelector('input[name=confirmPassword')
+    if (confirm.value === password.value) {
+      confirm.setCustomValidity("")
+
+    } else {
+      confirm.setCustomValidity("Les mots de passes ne sont pas identiques...")
+    }
+  }
   const [validated, setValidated] = useState(false)
   const handleSubmit = (event) => {
     const form = event.currentTarget
@@ -75,11 +77,12 @@ const RegisterPage = () => {
                     placeholder='Choix de votre mot de passe.'
                     name='password'
                     minLength={6}
+                    onChange={onChange}
                   />
                   <Form.Control.Feedback type='invalid'>
                     Veuillez svp entrer un mot de passe valide !
                   </Form.Control.Feedback>
-                  <Form.Text className="text-muted">
+                  <Form.Text className='text-muted'>
                     Le mot de passe doit comporter au minimum 6 caractères.
                   </Form.Text>
                 </Form.Group>
@@ -94,6 +97,7 @@ const RegisterPage = () => {
                     placeholder='Votre mot de passe.'
                     name='confirmPassword'
                     minLength={6}
+                    onChange={onChange}
                   />
                   <Form.Control.Feedback type='invalid'>
                     Les mots de passe ne correspondent pas !
@@ -113,7 +117,7 @@ const RegisterPage = () => {
                   size='sm'
                   role='status'
                   aria-hidden='true'
-                />{' '}
+                />
                 Enregistrer
               </Button>
               <Alert show={true} variant='danger'>
