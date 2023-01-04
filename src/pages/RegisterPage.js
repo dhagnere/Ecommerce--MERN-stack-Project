@@ -34,27 +34,27 @@ const RegisterPage = () => {
             <Form noValidate validated={validated} onSubmit={handleSubmit}>
               <Row className='mb-3'>
                 <Form.Group className='mb-3' controlId='formBasicName'>
-                  <Form.Label>Veuillez renseigner votre nom :</Form.Label>
-                  <Form.Control
-                    required
-                    type='text'
-                    placeholder='Renseigner votre nom ici.'
-                    name='name'
-                  />
-                  <Form.Control.Feedback type='invalid'>
-                    Veuillez svp entrer un nom !
-                  </Form.Control.Feedback>
-                </Form.Group>
-                <Form.Group className='mb-3' controlId='formBasicLastName'>
                   <Form.Label>Veuillez renseigner votre prénom :</Form.Label>
                   <Form.Control
                     required
                     type='text'
                     placeholder='Renseigner votre prénom ici.'
+                    name='name'
+                  />
+                  <Form.Control.Feedback type='invalid'>
+                    Veuillez svp entrer un prénom !
+                  </Form.Control.Feedback>
+                </Form.Group>
+                <Form.Group className='mb-3' controlId='formBasicLastName'>
+                  <Form.Label>Veuillez renseigner votre nom :</Form.Label>
+                  <Form.Control
+                    required
+                    type='text'
+                    placeholder='Renseigner votre nom ici.'
                     name='firstName'
                   />
                   <Form.Control.Feedback type='invalid'>
-                    Veuillez svp entrer votre prénom !
+                    Veuillez svp entrer votre nom !
                   </Form.Control.Feedback>
                 </Form.Group>
                 <Form.Group className='mb-3' controlId='formBasicEmail'>
