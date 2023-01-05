@@ -33,7 +33,6 @@ const HeaderComponent = () => {
                 <Dropdown.Item>Electronique</Dropdown.Item>
                 <Dropdown.Item>Livres</Dropdown.Item>
                 <Dropdown.Item>Photographie</Dropdown.Item>
-            
               </DropdownButton>
               <Form.Control
                 type='text'
@@ -66,12 +65,12 @@ const HeaderComponent = () => {
               <NavDropdown.Item>Se Déconnecter</NavDropdown.Item>
             </NavDropdown>
             <LinkContainer to='/Login'>
-              <Nav.Link>Se connecter</Nav.Link>
+              <Nav.Link>Connexion</Nav.Link>
             </LinkContainer>
             <LinkContainer to='/Register'>
-              <Nav.Link>S'enregistrer</Nav.Link>
+              <Nav.Link>Enregistrement</Nav.Link>
             </LinkContainer>
-            <Nav.Link href='#pricing'>
+            <Nav.Link href='/cart'>
               <Badge pill bg='danger'>
                 2
               </Badge>

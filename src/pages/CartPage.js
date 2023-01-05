@@ -10,7 +10,7 @@ const CartPage = () => {
           <h1>Panier.</h1>
           <ListGroup variant='flush'>
             {Array.from({ length: 3 }).map((item, idx) => (
-              <CartItemComponent key={idx}/>
+              <CartItemComponent key={idx} />
             ))}
           </ListGroup>
           <Alert variant='info'>Votre panier est vide</Alert>
@@ -28,7 +28,7 @@ const CartPage = () => {
               <hr></hr>
             </ListGroup.Item>
             <ListGroup.Item>
-              <LinkContainer to='user/order-details/'>
+              <LinkContainer to='/user/cart-details/'>
                 <Button type='button'>Procéder au paiement.</Button>
               </LinkContainer>
             </ListGroup.Item>
