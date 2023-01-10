@@ -16,10 +16,23 @@ import { Link } from 'react-router-dom'
 
 const HeaderComponent = () => {
   return (
-    <Navbar collapseOnSelect expand='lg' bg='dark' variant='dark'>
+    <Navbar
+      collapseOnSelect
+      expand='lg'
+      bg='dark'
+      variant='dark'
+      className='navbar-header'
+    >
       <Container>
         <LinkContainer to='/'>
-          <Navbar.Brand href='/'>VOTRE LOGO</Navbar.Brand>
+          <Navbar.Brand href='/'>
+            <img
+              src='images/logo_transparent.png'
+              crossOrigin='anonymous'
+              height='80'
+              alt='logo'
+            />
+          </Navbar.Brand>
         </LinkContainer>
 
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
