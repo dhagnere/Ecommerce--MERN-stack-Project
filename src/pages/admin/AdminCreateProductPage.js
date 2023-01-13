@@ -33,7 +33,7 @@ const AdminCreateProductPage = () => {
           </Link>
         </Col>
         <Col md={6}>
-          <h1>Creation d'un nouveau produit</h1>
+          <h1>Creation d'un nouvel article</h1>
           <Form noValidate validated={validated} onSubmit={handleSubmit}>
             <Form.Group className='mb-3' controlId='formBasicName'>
               <Form.Label>Nom du produit</Form.Label>

@@ -29,7 +29,7 @@ const HeaderComponent = () => {
             <img
               src='images/logo_transparent.png'
               crossOrigin='anonymous'
-              height='80'
+              height='100'
               alt='logo'
             />
           </Navbar.Brand>
