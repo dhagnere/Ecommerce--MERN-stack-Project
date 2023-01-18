@@ -19,8 +19,7 @@ const onHover = {
   left: "5px",
   top: "-10px",
   transform:"scale(2.5)"
-  
-
+ 
 }
 
 const AdminEditProductPage = () => {

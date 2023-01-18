@@ -4,7 +4,7 @@ import { LinkContainer } from 'react-router-bootstrap'
 import AdminLinksComponent from '../../components/admin/AdminLinksComponent'
 
 const deleteHandler = () => {
-  if(window.confirm("Etes vous sure ?")) alert ("Produit suprimé")
+  if(window.confirm("Etes vous sure ?")) alert ("Utilsateur supprimé")
 }
 
 const AdminUsersPage = () => {
@@ -38,7 +38,7 @@ const AdminUsersPage = () => {
                   <i className={item}></i>
                 </td>
                 <td>
-                <LinkContainer to='/admin/order-details'>
+                <LinkContainer to='/admin/edit-user'>
                     <Button className='btn-sm'>
                       <i className='bi bi-pencil-square'></i>
                     </Button>
