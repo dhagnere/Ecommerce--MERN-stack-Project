@@ -8,7 +8,7 @@ const ProductForListComponent = ({ images, idx }) => {
       <Row>
         <Col lg={5}>
           <Card.Img
-            variant='top'
+            variant='top' crossOrigin='annymous'
             src={'/images/' + images[idx] + '-category.png'}
           />
         </Col>
