@@ -27,7 +27,7 @@ const HeaderComponent = () => {
         <LinkContainer to='/'>
           <Navbar.Brand href='/'>
             <img
-              src='images/logo_transparent.png'
+              src='/images/logo_transparent.png'
               crossOrigin='anonymous'
               height='100'
               alt='logo'
