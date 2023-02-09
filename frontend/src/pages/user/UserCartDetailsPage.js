@@ -9,6 +9,11 @@ import {
 } from 'react-bootstrap'
 import CartItemComponent from '../../components/CartItemComponent'
 
+/**
+ * It renders a container with a row, which contains a column with a list group, which contains a list
+ * group item, which contains a button
+ * @returns A React component.
+ */
 const UserCartDetailsPage = () => {
   return (
     <>

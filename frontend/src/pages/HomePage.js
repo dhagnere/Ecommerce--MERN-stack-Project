@@ -2,6 +2,11 @@ import ProductCarouselComponent from '../components/ProductCarouselComponent'
 import CategoryCardComponent from '../components/CategoryCardComponent'
 import { Row, Container } from 'react-bootstrap'
 
+/**
+ * It returns a React component that renders a ProductCarouselComponent and a Row of
+ * CategoryCardComponents.
+ * @returns A React component
+ */
 const HomePage = () => {
   const categories = ['Tablets', 'Monitors', 'Games', 'Printers' , 'Test', 'Test1', 'Test2']
 

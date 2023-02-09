@@ -14,6 +14,10 @@ import {
 import { LinkContainer } from 'react-router-bootstrap'
 import { Link } from 'react-router-dom'
 
+/**
+ * It returns a Navbar component from the react-bootstrap library
+ * @returns A React component.
+ */
 const HeaderComponent = () => {
   return (
     <Navbar

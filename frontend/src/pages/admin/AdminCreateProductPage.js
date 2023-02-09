@@ -11,6 +11,25 @@ import {
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
+/**
+ * I have a form with a select element and a text input. I want to disable the text input if the select
+ * element is empty.
+ * 
+ * I've tried to use the disabled prop on the text input, but it doesn't work.
+ * 
+ * I've also tried to use the onChange event on the select element, but it doesn't work either.
+ * 
+ * I've also tried to use the onChange event on the select element, but it doesn't work either.
+ * 
+ * I've also tried to use the onChange event on the select element, but it doesn't work either.
+ * 
+ * I've also tried to use the onChange event on the select element, but it doesn't work either.
+ * 
+ * I've also tried to use the onChange event on the select element, but it doesn't work either.
+ * 
+ * I've also tried to use the onChange event on
+ * @returns A React component.
+ */
 const AdminCreateProductPage = () => {
   const [validated, setValidated] = useState(false)
   const handleSubmit = (event) => {

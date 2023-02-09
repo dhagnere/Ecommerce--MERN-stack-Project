@@ -1,8 +1,9 @@
 const express = require('express')
 const router = express.Router()
 
-router.get("/", (req, res) => {
-  res.send('Route pour gérer les produits , exemple rechercher les produits')
-})
+const getProducts = require('../controllers/productController')
 
-module.exports= router
+//if get is used on / then call the getProducts from productController//
+router.get('/', getProducts)
+
+module.exports = router

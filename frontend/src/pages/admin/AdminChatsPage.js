@@ -2,6 +2,11 @@ import AdminChatRoomPageComponent from '../../components/admin/AdminChatRoomComp
 import AdminLinksComponent from '../../components/admin/AdminLinksComponent'
 import { Row, Col } from 'react-bootstrap'
 
+/**
+ * It returns a row with two columns. The first column has a component called AdminLinksComponent and
+ * the second column has a component called AdminChatRoomPageComponent.
+ * @returns A function that returns a JSX element.
+ */
 const AdminChatsPage = () => {
   return (
 
@@ -17,4 +22,5 @@ const AdminChatsPage = () => {
   )
 }
 
+/* Exporting the function `AdminChatsPage` so that it can be imported into another file. */
 export default AdminChatsPage

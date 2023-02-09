@@ -1,5 +1,10 @@
 import { Form } from 'react-bootstrap'
 
+/**
+ * It takes an array of objects, and for each object, it maps over the values of the object and creates
+ * a checkbox for each value
+ * @returns An array of objects.
+ */
 const AttributesFilterComponent = () => {
   return (
     <>

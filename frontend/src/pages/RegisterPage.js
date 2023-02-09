@@ -3,6 +3,30 @@ import Spinner from 'react-bootstrap/Spinner'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
+/**
+ * The function is a React component that renders a form with a submit button. The form has a few input
+ * fields, and the submit button is disabled until the form is valid. The form is validated using the
+ * HTML5 constraint validation API.
+ * 
+ * The form is validated using the HTML5 constraint validation API.
+ * 
+ * The form is validated using the HTML5 constraint validation API.
+ * 
+ * The form is validated using the HTML5 constraint validation API.
+ * 
+ * The form is validated using the HTML5 constraint validation API.
+ * 
+ * The form is validated using the HTML5 constraint validation API.
+ * 
+ * The form is validated using the HTML5 constraint validation API.
+ * 
+ * The form is validated using the HTML5 constraint validation API.
+ * 
+ * The form is validated using the HTML5 constraint validation API.
+ * 
+ * The form is validated using the HTML5 constraint validation API.
+ * @returns A React component.
+ */
 const RegisterPage = () => {
   const onChange = () => {
     const password = document.querySelector('input[name=password]')

@@ -1,5 +1,9 @@
 import Pagination from 'react-bootstrap/Pagination'
 
+/**
+ * It returns a Pagination component with a bunch of Pagination.Item components inside of it.
+ * @returns A React component
+ */
 const PaginationComponent = () => {
   return (
 <Pagination>

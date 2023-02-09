@@ -13,6 +13,30 @@ import { Rating } from 'react-simple-star-rating'
 import ImageZoom from 'js-image-zoom'
 import { useEffect } from 'react'
 
+/**
+ * It renders a container with a row, which contains two columns. The first column contains four
+ * images, and the second column contains a row, which contains two columns. The first column of the
+ * second row contains a list group, and the second column of the second row contains another list
+ * group.
+ * </code>
+ * 
+ * 
+ * A:
+ * 
+ * I think you should use <code>useRef</code> to get the reference of the image and then use
+ * <code>useEffect</code> to initialize the <code>ImageZoom</code>
+ * <code>const ProductDetailsPage = () =&gt; {
+ *   var options = {
+ *     scale: 2,
+ *     offset: { vertical: 0, horizontal: 0 },
+ *   }
+ * 
+ *   const firstRef = useRef(null);
+ *   const secondRef = useRef(null);
+ *   const thirdRef = useRef(null);
+ *   const fourthRef = useRef(null);
+ * @returns A React component.
+ */
 const ProductDetailsPage = () => {
   var options = {
     scale: 2,

@@ -1,6 +1,10 @@
 import { Nav, Navbar } from 'react-bootstrap'
 import { Link, LinkContainer } from 'react-router-bootstrap'
 
+/**
+ * It returns a Navbar component with a Nav component inside of it
+ * @returns A Navbar component with a Nav component inside.
+ */
 const AdminLinksComponent = () => {
   return (
     <Navbar bg='light' variant='light'>

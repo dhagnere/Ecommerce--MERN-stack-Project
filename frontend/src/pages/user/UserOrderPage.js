@@ -1,6 +1,10 @@
 import { Row, Col, Table } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
+/**
+ * It returns a table with two rows, each row has a check or an x in the last column
+ * @returns An array of objects.
+ */
 const UserOrdersPage = () => {
   return (
     <Row className='m-5'>

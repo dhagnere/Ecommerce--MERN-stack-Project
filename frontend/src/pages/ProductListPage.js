@@ -14,6 +14,16 @@ import CategoryFilterComponent from '../components/CategoryFilterComponent'
 import AttributesFilterComponent from '../components/AttributesFilterComponent'
 import ProductForListComponent from '../components/ProductForListComponent'
 import PaginationComponent from '../components/PaginationComponent'
+/**
+ * It renders a container with a row, which contains two columns, the first one contains a list group
+ * with a sort options component, a filter title, a price filter component, a rating filter component,
+ * a category filter component, an attributes filter component and two buttons, the second column
+ * contains a product for list component and a pagination component
+ * @returns A component that renders a container with a row and two columns. The first column contains
+ * a list group with a sort options component, a price filter component, a rating filter component, a
+ * category filter component, an attributes filter component, and two buttons. The second column
+ * contains five product for list components and a pagination component.
+ */
 const ProductListPage = () => {
   return (
     <Container fluid>

@@ -3,10 +3,19 @@ import { Row, Col, Table, Button } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 import AdminLinksComponent from '../../components/admin/AdminLinksComponent'
 
+/**
+ * If the user clicks "OK" in the confirm dialog, then an alert dialog is shown.
+ */
 const deleteHandler = () => {
   if(window.confirm("Etes vous sure ?")) alert ("Utilsateur supprimé")
 }
 
+/**
+ * It returns a row with two columns, the first column contains a component called AdminLinksComponent,
+ * the second column contains a table with some data.
+ * </code>
+ * @returns A table with a list of users.
+ */
 const AdminUsersPage = () => {
   return (
     <Row className='m-5'>

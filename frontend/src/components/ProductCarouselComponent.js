@@ -1,6 +1,10 @@
 import Carousel from 'react-bootstrap/Carousel'
 import { LinkContainer } from 'react-router-bootstrap'
 
+/**
+ * It returns a Carousel component with 3 Carousel.Item components
+ * @returns A React component.
+ */
 const ProductCarouselComponent = () => {
   const cursP = {
     cursor: 'Pointer',

@@ -2,6 +2,10 @@ import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap'
 
 import { useState } from 'react'
 
+/**
+ * The function is a form that allows the user to update his profile.
+ * @returns A React component.
+ */
 const UserProfilePage = () => {
   const onChange = () => {
     const password = document.querySelector('input[name=password]')

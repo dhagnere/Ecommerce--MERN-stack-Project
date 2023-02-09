@@ -136,6 +136,7 @@ const data = [
   },
 ]
 
+/* A function that returns a react component. */
 const AdminAnalyticsPage = () => {
   return (
     <Row className='m-5'>
@@ -190,4 +191,5 @@ const AdminAnalyticsPage = () => {
   )
 }
 
+/* Exporting the component so that it can be imported in other files. */
 export default AdminAnalyticsPage

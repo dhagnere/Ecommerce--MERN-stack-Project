@@ -1,5 +1,9 @@
 import { Form } from 'react-bootstrap'
 
+/**
+ * It returns a Form.Select component with aria-label, and a few options
+ * @returns A React component
+ */
 const SortOptionsComponent = () => {
   return (
     <Form.Select aria-label='Default select example'>

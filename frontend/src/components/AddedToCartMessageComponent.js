@@ -2,6 +2,10 @@ import { useState } from 'react'
 import { Alert, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
+/**
+ * It's a React component that renders an alert message that can be dismissed.
+ * @returns A component that renders an alert.
+ */
 const AddedToCartMessageComponent = () => {
   const [show, setShow] = useState(true)
   return (

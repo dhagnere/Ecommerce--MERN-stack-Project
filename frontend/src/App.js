@@ -34,6 +34,7 @@ import AdminUsersPage from './pages/admin/AdminUsersPage'
 //utils
 import ScrollToTop from './utils/ScrollToTop'
 
+/* A function that returns a function. */
 function App() {
   return (
     <BrowserRouter>
@@ -49,7 +50,7 @@ function App() {
           <Route path='/product-details/:id' element={<ProductDetailsPage />} />
           <Route path='/product-list' element={<ProductListPage />} />
           <Route path='/register' element={<RegisterPage />} />
-          <Route path='*' element='page not exist 404' />
+          <Route path='*' element="La page n'existe pas ! erreur: 404" />
         </Route>
 
         {/*user protected routes*/}

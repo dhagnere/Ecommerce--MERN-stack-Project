@@ -1,5 +1,9 @@
 import { Form } from 'react-bootstrap'
 
+/**
+ * It returns a React fragment containing a span and a form. The form contains 5 checkboxes
+ * @returns A React component.
+ */
 const CategoryFilterComponent = () => {
   return (
     <>

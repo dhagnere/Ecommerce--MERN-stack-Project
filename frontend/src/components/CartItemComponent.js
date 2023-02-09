@@ -1,4 +1,9 @@
 import { ListGroup, Row, Col, Image, Form, Button } from 'react-bootstrap'
+/**
+ * It returns a ListGroup.Item with a Row inside, which contains a Col with an Image, a Col with text,
+ * a Col with text, a Col with a Form.Select, and a Col with a Button
+ * @returns A React component.
+ */
 const CartItemComponent = () => {
   return (
     <>

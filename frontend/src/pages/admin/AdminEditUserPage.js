@@ -2,6 +2,19 @@ import { Row, Col, Button, Form, UseState } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
+/**
+ * It's a React functional component that renders a form with a submit button. 
+ * 
+ * The form has a few input fields and a checkbox. 
+ * 
+ * The submit button is disabled until the form is valid. 
+ * 
+ * The form is valid when all the input fields are filled in. 
+ * 
+ * The form is validated using the React Hooks API. 
+
+ * @returns A React component.
+ */
 const AdminEditUserPage = () => {
   const [validated, setValidated] = useState(false)
   const handleSubmit = (event) => {

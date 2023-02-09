@@ -2,6 +2,10 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
+/**
+ * It returns a footer component with a container, row, and column
+ * @returns A React component
+ */
 const FooterComponent = () => {
   return (
     <footer>

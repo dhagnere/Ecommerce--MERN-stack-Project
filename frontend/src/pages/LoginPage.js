@@ -3,6 +3,10 @@ import Spinner from 'react-bootstrap/Spinner'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
+/**
+ * It's a function that returns a form with a submit button.
+ * @returns A React component.
+ */
 const LoginPage = () => {
   const [validated, setValidated] = useState(false)
   const handleSubmit = (event) => {

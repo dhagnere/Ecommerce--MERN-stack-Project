@@ -2,6 +2,11 @@ import { Row, Col, Table } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import AdminLinksComponent from '../../components/admin/AdminLinksComponent'
 
+/**
+ * It returns a row with two columns, the first one containing a component called AdminLinksComponent,
+ * the second one containing a table with two rows
+ * @returns A React component
+ */
 const AdminOrdersPage = () => {
   return (
     <Row className='m-5'>

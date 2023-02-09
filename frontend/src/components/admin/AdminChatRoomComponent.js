@@ -1,6 +1,10 @@
 import { Toast, Button, Form } from 'react-bootstrap'
 import { Fragment, useState } from 'react'
 
+/**
+ * It renders two toasts, each with a scrollable chat history and a form to submit a new message
+ * @returns A React component.
+ */
 const AdminChatRoomComponent = () => {
   const [toast1, closeToast1] = useState(true)
   const close1 = () => closeToast1(false)

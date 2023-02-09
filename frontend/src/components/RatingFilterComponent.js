@@ -2,6 +2,11 @@ import { Form } from 'react-bootstrap'
 import { Rating } from 'react-simple-star-rating'
 import { Fragment } from 'react'
 
+/**
+ * It returns a span with the text "Notes des Clients" and then it returns 5 checkboxes with a rating
+ * component inside the label.
+ * @returns An array of 5 checkboxes with a rating component inside the label.
+ */
 const RatingFilterComponent = () => {
   return (
     <>

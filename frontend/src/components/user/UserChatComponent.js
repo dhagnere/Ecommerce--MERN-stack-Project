@@ -1,6 +1,11 @@
 import '../../chats.css'
 import Button from 'react-bootstrap/Button'
 
+/**
+ * It renders a checkbox, a label, a div with class chat-wrapper, a div with class chat-header, a div
+ * with class chat-form, a div with class chat-msg, and a textarea
+ * @returns A React component.
+ */
 const UserChatComponent = () => {
   return (
     <>

@@ -9,10 +9,9 @@ app.get('/',(req, res)=> {
   res.json({mesage : "API running..."})
 })
 
+/*accès à l'APIredirige vers l'apiRoutes*/
 app.use('/api' , apiRoutes)
-//app.get('/api/products' , (req, res) => {
- // res.send('future route pour articles')
-//})
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)

@@ -2,6 +2,11 @@ import { Row, Col, Button, Container, Alert, ListGroup } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 import CartItemComponent from '../components/CartItemComponent'
 
+/**
+ * It renders a container with a row, which contains two columns. The first column contains a list of
+ * CartItemComponent, and the second column contains a list of ListGroup.Item
+ * @returns A React component.
+ */
 const CartPage = () => {
   return (
     <Container fluid>

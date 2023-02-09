@@ -2,10 +2,18 @@ import { Row, Col, Table, Button } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 import AdminLinksComponent from '../../components/admin/AdminLinksComponent'
 
+/**
+ * If the user clicks "OK" in the confirm dialog, then an alert dialog is shown.
+ */
 const deleteHandler = () => {
   if(window.confirm("Etes vous sure ?")) alert ("Produit suprimé")
 }
 
+/**
+ * It returns a row with two columns, the first one is a component that contains a list of links, the
+ * second one is a table with a list of products
+ * @returns A React component
+ */
 const AdminProductsPage = () => {
   return (
     <Row className='m-5'>

@@ -1,6 +1,10 @@
 import { Button , Card } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 
+/**
+ * It returns a card with a title and a button
+ * @returns A React component.
+ */
 const CategoryCardComponent = ({ category, idx }) => {
   const images = [
     'images/tablets-category.png',

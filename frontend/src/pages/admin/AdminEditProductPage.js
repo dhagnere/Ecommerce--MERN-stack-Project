@@ -22,6 +22,28 @@ const onHover = {
  
 }
 
+/**
+ * I have a form with a select element, and I want to disable the form's submit button until the user
+ * has selected an option.
+ * 
+ * I'm using React Hooks, and I'm using the useState hook to keep track of the form's state. I'm using
+ * the useEffect hook to watch the form's state and enable/disable the submit button.
+ * 
+ * I'm using the onChange event to update the form's state.
+ * 
+ * I'm using the disabled attribute to enable/disable the submit button.
+ * 
+ * I'm using the required attribute to make the select element required.
+ * 
+ * I'm using the value attribute to set the select element's value.
+ * 
+ * I'm using the defaultValue attribute to set the select element's default value.
+ * 
+ * I'm using the selected attribute to set the select element's selected option.
+ * 
+ * I'm using the selected
+ * @returns A React component.
+ */
 const AdminEditProductPage = () => {
   const [validated, setValidated] = useState(false)
   const handleSubmit = (event) => {

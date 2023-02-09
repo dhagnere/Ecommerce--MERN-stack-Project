@@ -2,6 +2,10 @@ import { Card, Button, Row, Col } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 import { Rating } from 'react-simple-star-rating'
 
+/**
+ * It renders a card with a picture and some text
+ * @returns A React component.
+ */
 const ProductForListComponent = ({ images, idx }) => {
   return (
     <Card style={{ marginTop: '30px', marginBottom: '50px' }}>
