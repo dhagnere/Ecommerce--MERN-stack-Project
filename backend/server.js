@@ -9,8 +9,19 @@ app.get('/',(req, res)=> {
   res.json({mesage : "API running..."})
 })
 
+//mongoDB connection
+const connectDB = require('./config/db');
+connectDB();
+
 /*accès à l'APIredirige vers l'apiRoutes*/
 app.use('/api' , apiRoutes)
+
+
+
+app.use((error, req, res, next) => {
+res.status(error.status || 500).json({error: error.message})
+})
+
 
 
 app.listen(port, () => {
