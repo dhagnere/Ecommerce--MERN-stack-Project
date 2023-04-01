@@ -5,8 +5,8 @@ const port = 3001
 
 const apiRoutes= require("./routes/apiRoutes")
 
-app.get('/',(req, res)=> {
-  res.json({mesage : "API running..."})
+app.get('/',async (req, res)=> {
+  res.send('Hello World!')
 })
 
 //mongoDB connection
