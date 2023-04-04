@@ -38,7 +38,7 @@ import ScrollToTop from './utils/ScrollToTop'
 function App() {
   return (
     <BrowserRouter>
-      <ScrollToTop/>
+      <ScrollToTop />
       <HeaderComponent />
       <Routes>
         <Route element={<RoutesWithUserChatComponent />}>
