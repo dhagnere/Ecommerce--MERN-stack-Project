@@ -6,7 +6,7 @@ const port = 3001
 const apiRoutes = require('./routes/apiRoutes')
 
 app.get('/', async (req, res) => {
-  res.send('Hello World!')
+  res.send('Api running')
 })
 
 //mongoDB connection
