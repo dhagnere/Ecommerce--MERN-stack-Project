@@ -2,14 +2,16 @@ const connectDB = require('../config/db')
 connectDB()
 
 const categoryData = require('./categories')
-const productsData = require('./products')
-const reviewsData = require('./reviews')
-const usersData = require('./users')
+const productData = require('./products')
+const reviewData = require('./reviews')
+const userData = require('./users')
+const orderData = require('./orders')
 
 const Category = require('../models/CategoryModel')
 const Product = require('../models/ProductModel')
 const Review = require('../models/ReviewModel')
 const User = require('../models/UserModel')
+const Order = require('../models/OrderModel')
 
 const importData = async () => {
   try {
@@ -17,19 +19,22 @@ const importData = async () => {
     await Product.collection.dropIndexes()
     await Review.collection.dropIndexes()
     await User.collection.dropIndexes()
+    await Order.collection.dropIndexes()
 
     await Category.deleteMany({})
     await Product.deleteMany({})
     await Review.deleteMany({})
     await User.deleteMany({})
+    await Order.deleteMany({})
 
     await Category.insertMany(categoryData)
-    await User.insertMany(usersData)
+    await User.insertMany(userData)
+    await Order.insertMany(orderData)
 
-    const reviews = await Review.insertMany(reviewsData)
+    const reviews = await Review.insertMany(reviewData)
 
     //on parcours l'array de produits et on ajoute les reviews correspondantes
-    const sampleProducts = productsData.map((product) => {
+    const sampleProducts = productData.map((product) => {
       reviews.map((review) => {
         product.reviews.push(review._id)
       })
